@@ -6241,6 +6241,7 @@
 
 			.image.fit img {
 				width: 50%;
+				float: right;
 			}
 
 		.image.main {
