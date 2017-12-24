@@ -7,7 +7,7 @@ var params = myform.serializeArray().reduce(function(obj, item) {
   }, {});
 
   // Change to your service ID, or keep using the default service
-  var service_id = "default_service";
+  var service_id = "so_one_bk_ru";
   var template_id = "audition";
 
   myform.find("button").text("Sending...");
