@@ -7,6 +7,7 @@ myform.submit(function(event){
   var template_id = "audition";
 
   myform.find("button").text("Sending...");
+	console.log("fine");
   emailjs.sendForm(service_id,template_id,"myform")
   	.then(function(){ 
     	alert("Sent!");
