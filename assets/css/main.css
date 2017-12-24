@@ -3360,6 +3360,11 @@
 			.video .link span {
 				display: none;
 			}
+		.video iframe, .video object, .video embed{
+			position: relative;
+  			width: 100%;
+  			height: 100%;
+		}
 
 /* Header */
 
