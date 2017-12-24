@@ -1,10 +1,6 @@
 var myform = $("form#myform");
 myform.submit(function(event){
 	event.preventDefault();
-var params = myform.serializeArray().reduce(function(obj, item) {
-     obj[item.name] = item.value;
-     return obj;
-  }, {});
 
   // Change to your service ID, or keep using the default service
   var service_id = "so_one_bk_ru";
