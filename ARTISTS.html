@@ -18,15 +18,21 @@
 
 		<!-- Header -->
 			<header id="header">
-				<!-- Nav -->
-					<div class="w3-top">
-				  <div class="w3-bar w3-black w3-card">
-				    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-				    <a href="HOME.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-				    <a href="AUDITION.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">AUDITION</a>
-				    <a href="ARTISTS.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ARTISTS</a>
-				   </div>
-				</div>
+				<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="HOME.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="AUDITION.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">AUDITION</a>
+    <a href="ARTISTS.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ARTISTS</a>
+  </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="AUDITION.html" class="w3-bar-item w3-button w3-padding-large">AUDITION</a>
+  <a href="ARTISTS.html" class="w3-bar-item w3-button w3-padding-large">ARTISTS</a>
+</div>
 			</header>
 
 		<!-- Main -->
@@ -144,6 +150,15 @@ Tesla was a BRILLIANT visionary, uninterested in wealth and unafraid of the publ
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+<script> function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
 
 	</body>
 </html>
