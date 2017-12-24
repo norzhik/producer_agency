@@ -14,7 +14,6 @@ myform.submit(function(event){
     }, function(err) {
        alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
        myform.find("button").text("Send");
-	console.log(err);
     });
   return false;
 });
