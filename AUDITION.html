@@ -38,30 +38,19 @@
 				padding-top: 70px;">
 				<div class="inner">
 
-		<form id="test-form">
-
-	  <div>
-	    <input type="text" name="form_field_1" placeholder="First name"/>
-	  </div>
-<br>
-	  <div>
-	    <input type="text" name="form_field_2" placeholder="Last name"/>
-	  </div>
-<br>
-	  <div>
-	    <input type="text" name="form_field_3" placeholder="Age"/>
-	  </div>
-<br>
-	  <div>
-	    <input type="text" name="form_field_4" placeholder="e-mail"/>
-	  </div>
-<br>
-	  <div>
-	    <button type="submit"id="submit-form">Apply</button>
-	  </div>
-
-	</form>
-
+					<form id="myform" method="post">
+						<input type="text" name="reply_to" placeholder="First name"/>
+						<br>
+						<input type="text" name="from_name" placeholder="Last name" />
+			      <br>
+						<input type="text" name="to_name" placeholder="Age"/>
+			      <br>
+						<input type="text" name="message_html" placeholder="e-mail"/>
+						<br><br>
+						<button>
+						Send
+						</button>
+						</form>
 
 				<hr class="major" />
 
@@ -69,8 +58,6 @@
 					<h2 id="content">Stages to be a part of NNC</h2>
 					<right>
 					<p class="align-left">
-						<img src="images/pic09.jpg" height="400" width="600"
-						style="margin-right: 10px" align="right" alt="">
 					    <p>1. Fill in the appication form</p>
 						<div class="6u 12u$(small)">
 							<p>2. When you get the confirmation e-mail, send your photo and video your dancing or singning (or everything) to this e-mail. Show all your talents</p>
@@ -107,6 +94,11 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+			<script type="text/javascript">
+			   (function(){
+			      emailjs.init("user_xkl0bXfTO2WZOvHzxMP1P");
+			   })();
+			</script>
 	</body>
 </html>
